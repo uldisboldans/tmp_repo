@@ -1,5 +1,4 @@
 import sqlite3
-from matplotlib.pyplot import table
 import pandas as pd
 import os
 import importlib
