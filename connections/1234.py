@@ -12,8 +12,8 @@ AVG_INCOME_CODE = "Hr_ktu" # data code used in the API to get average income
 working_directory_path = os.path.dirname(os.path.realpath(__file__))
 module_name = os.path.basename(__file__).split(".")[0] 
 tmp_list = working_directory_path.split("\\")
-project_path_items = tmp_list[:-1] # remove the last folder from path
-project_directory = os.path.join(*project_path_items)
+project_path_items = tmp_list[1:-1] # remove the last folder from path -> get to project folder
+project_directory = os.path.join("C:\\",*project_path_items)
 
 # log file setup for errors, warnings, info etc.
 sys.path.insert(1, project_directory) #adding a python path to runtime so that the other py scripts at the same folder level can be imported | insert at 1, 0 is the script path
