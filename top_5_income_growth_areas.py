@@ -45,7 +45,7 @@ with sqlite3.connect(db_host) as conn:
         base_year_income = line[3]
         latest_income = line[4]
         growth = line[2]
-        print(f"No {index+1} area with highest gorwth income is {area_label}: {round(growth*100,1)}% ({BASE_YEAR}: EUR {base_year_income} -> {COMPARE_TO_YEAR}: EUR {latest_income})")
+        print(f"No {index+1} area with highest growth income is {area_label}: {round(growth*100,1)}% ({BASE_YEAR}: EUR {base_year_income} -> {COMPARE_TO_YEAR}: EUR {latest_income})")
 
 
     
